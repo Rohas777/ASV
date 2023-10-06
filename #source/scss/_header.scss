@@ -1,0 +1,128 @@
+@import "index";
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $headerHeigth;
+    background-color: black;
+    color: white;
+    font-family: $fontTitle;
+    font-weight: 700;
+    line-height: normal;
+
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 100%;
+        font-size: 48px;
+        cursor: pointer;
+        transition: all .2s ease-in;
+
+        &:hover{
+            background-color: $ACCENT;
+            color: #000;
+        }
+
+        &.active{
+            background-color: $ACCENT;
+            color: #000;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        height: 100%;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 230px;
+        font-size: 24px;
+        position: relative;
+        cursor: pointer;
+        transition: all .15s ease-in;
+
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: 20%;
+            left: 50%;
+            width: 90px;
+            height: 6px;
+            background-color: $ACCENT;
+            transform: translateX(-50%);
+            transition: all .2s ease-in;
+            opacity: 0;
+        }
+
+        &:hover{
+            color: $ACCENT;
+
+            &::after{
+                content: '';
+                opacity: 1;
+            }
+        }
+
+        &.active{
+            color: $ACCENT;
+
+            &::after{
+                content: '';
+                opacity: 1;
+            }
+
+        }
+
+        &_login{
+            width: 150px;
+            position: relative;
+            overflow: visible;
+            color: #000;
+
+            svg{
+                width: 30px;
+                transition: all .15s ease-in;
+                height: 30px;
+            }
+
+            &:hover{
+                color: #000;
+                svg{
+                    fill: $ACCENT;
+                }
+                &::after{
+                    content: '';
+                    opacity: 0;
+                }
+            }
+
+            &.active{
+                color: #000;
+                svg{
+                    fill: $ACCENT;
+                }
+                &::after{
+                    content: '';
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+
+

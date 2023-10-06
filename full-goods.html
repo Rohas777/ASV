@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/full-goods.css">
+    <title>ASV</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <a href="/" class="header__logo">ASV</a>
+                <nav class="header__menu">
+                    <a href="/catalog.html" class="header__link">Каталог</a>
+                    <a href="/cart.html" class="header__link">Корзина</a>
+                    <a href="/about.html" class="header__link">О нас</a>
+                    <div class="header__link header__link_login unregister"> <!--Если юзер не авторизован, добавлять класс unregister, иначе убирать-->
+                        <svg viewBox="0 0 1024 1024" version="1.1" fill="#ffffff">
+                            <path d="M512 1024a510.421333 510.421333 0 0 1-371.584-160A511.850667 511.850667 0 1 1 512 1024z m309.632-160a466.965333 466.965333 0 0 0-619.264 0 467.477333 467.477333 0 0 0 619.264 0zM746.666667 469.333333a234.666667 234.666667 0 1 0-234.666667 234.666667 234.666667 234.666667 0 0 0 234.666667-234.666667zM512 42.666667A468.864 468.864 0 0 0 171.370667 834.133333a510.528 510.528 0 0 1 219.52-115.690666 277.333333 277.333333 0 1 1 242.218666 0 510.528 510.528 0 0 1 219.52 115.690666A468.864 468.864 0 0 0 512 42.666667z"  />
+                        </svg>
+                        <div class="popup">
+                            <div class="popup__wrapper">
+                                <h2 class="popup__title title title_center">Аккаунт</h2>
+                                <!-- <a href="/login.html" class="popup_button button">Войти</a> -->
+                                <p class="popup__field"><b>Ваш логин:</b> user1234</p>
+                                <p class="popup__field"><b>Ваш e-mail:</b> example@mail.ru</p>
+                                <span class="popup__exit">Выйти</span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="full-goods">
+                <div class="container">
+                    <h2 class="full-goods__name">Трактор - John Deere 3035D</h2>
+                    <div class="full-goods__wrapper">
+                        <div class="full-goods__flexbox">
+                            <div class="full-goods__left">
+                                <img src="/img/traktor2.jpeg" alt="Preview" class="full-goods__image">
+                                <div class="full-goods__price">
+                                    <span>35 999 ₽</span>
+                                    <div class="full-goods__button card__add button">Добавить в корзину</div>
+                                </div>
+                                <div class="full-goods__color">
+                                    <span>Цвет:</span>
+                                    <input type="checkbox" class="full-goods__check full-goods__check_red">
+                                    <input type="checkbox" class="full-goods__check full-goods__check_yellow">
+                                    <input type="checkbox" class="full-goods__check full-goods__check_green active">
+                                </div>
+                            </div>
+                            <div class="full-goods__right">
+                                <h1 class="full-goods__title title">Описание</h1>
+                                <div class="full-goods__features">
+                                    <div class="full-goods__feature">
+                                        <p>Тип двигателя</p>
+                                        <span>дизельный</span>
+                                    </div>
+                                    <div class="full-goods__feature">
+                                        <p>Мощность</p>
+                                        <span>24.4 кВт</span>
+                                    </div>
+                                    <div class="full-goods__feature">
+                                        <p>Вес</p>
+                                        <span>4200 кг</span>
+                                    </div>
+                                </div>
+                                <p class="full-goods__paragraph">Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Не следует, однако забывать, что консультация с широким активом способствует подготовки и реализации направлений прогрессивного развития. Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание соответствующий условий активизации.</p>
+                                <ul class="full-goods__list">
+                                    <li class="full-goods__list-item">Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям.</li>
+                                    <li class="full-goods__list-item">Не следует, однако забывать, что консультация с широким активом способствует подготовки и реализации направлений прогрессивного развития.</li>
+                                    <li class="full-goods__list-item">Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание соответствующий условий активизации.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <table class="full-goods__table">
+                            <tr class="full-goods__row">
+                                <td class="full-goods__cell">Полезная мощность, кВт/л.с.</td>
+                                <td class="full-goods__cell">21,4 / 30 при 2400 об/мин</td>
+                            </tr>
+                            <tr class="full-goods__row">
+                                <td class="full-goods__cell">Топливная система</td>
+                                <td class="full-goods__cell">с прямым впрыском</td>
+                            </tr>
+                            <tr class="full-goods__row">
+                                <td class="full-goods__cell">Расход топлива (мин/макс), л/ч</td>
+                                <td class="full-goods__cell">1,4 / 5,0</td>
+                            </tr>
+                            <tr class="full-goods__row">
+                                <td class="full-goods__cell">Максимальная высота резания грунта, мм</td>
+                                <td class="full-goods__cell">0,37</td>
+                            </tr>
+                            <tr class="full-goods__row">
+                                <td class="full-goods__cell">Давление на грунт, кгс/см</td>
+                                <td class="full-goods__cell">5000 - 5270</td>
+                            </tr>
+                            <tr class="full-goods__row">
+                                <td class="full-goods__cell">Максимальная высота резания грунта, мм</td>
+                                <td class="full-goods__cell">0,37</td>
+                            </tr>
+                            <tr class="full-goods__row">
+                                <td class="full-goods__cell">Максимальная высота резания грунта, мм</td>
+                                <td class="full-goods__cell">0,37</td>
+                            </tr>
+                            <tr class="full-goods__row">
+                                <td class="full-goods__cell">Максимальная высота резания грунта, мм</td>
+                                <td class="full-goods__cell">0,37</td>
+                            </tr>
+                            <tr class="full-goods__row">
+                                <td class="full-goods__cell">Максимальная высота резания грунта, мм</td>
+                                <td class="full-goods__cell">0,37</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="/js/popup.js"></script>
+    <script src="/js/clicks.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/catalog.css">
+    <title>ASV</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <a href="/" class="header__logo">ASV</a>
+                <nav class="header__menu">
+                    <a href="/catalog.html" class="header__link active">Каталог</a>
+                    <a href="/cart.html" class="header__link">Корзина</a>
+                    <a href="/about.html" class="header__link">О нас</a>
+                    <div class="header__link header__link_login unregister"> <!--Если юзер не авторизован, добавлять класс unregister, иначе убирать-->
+                        <svg viewBox="0 0 1024 1024" version="1.1" fill="#ffffff">
+                            <path d="M512 1024a510.421333 510.421333 0 0 1-371.584-160A511.850667 511.850667 0 1 1 512 1024z m309.632-160a466.965333 466.965333 0 0 0-619.264 0 467.477333 467.477333 0 0 0 619.264 0zM746.666667 469.333333a234.666667 234.666667 0 1 0-234.666667 234.666667 234.666667 234.666667 0 0 0 234.666667-234.666667zM512 42.666667A468.864 468.864 0 0 0 171.370667 834.133333a510.528 510.528 0 0 1 219.52-115.690666 277.333333 277.333333 0 1 1 242.218666 0 510.528 510.528 0 0 1 219.52 115.690666A468.864 468.864 0 0 0 512 42.666667z"  />
+                        </svg>
+                        <div class="popup">
+                            <div class="popup__wrapper">
+                                <h2 class="popup__title title title_center">Аккаунт</h2>
+                                <!-- <a href="/login.html" class="popup_button button">Войти</a> -->
+                                <p class="popup__field"><b>Ваш логин:</b> user1234</p>
+                                <p class="popup__field"><b>Ваш e-mail:</b> example@mail.ru</p>
+                                <span class="popup__exit">Выйти</span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container catalog__container">
+                <div class="filters">
+                    <h1 class="filters__title title">Каталог</h1>
+                    <ul class="filters__list">
+                        <li class="filters__item filter">
+                            <div class="filter__head">
+                                <svg version="1.1" x="0px" y="0px" width="284.929px" height="284.929px" viewBox="0 0 284.929 284.929">
+                                    <g>
+                                        <path d="M282.082,76.511l-14.274-14.273c-1.902-1.906-4.093-2.856-6.57-2.856c-2.471,0-4.661,0.95-6.563,2.856L142.466,174.441
+                                            L30.262,62.241c-1.903-1.906-4.093-2.856-6.567-2.856c-2.475,0-4.665,0.95-6.567,2.856L2.856,76.515C0.95,78.417,0,80.607,0,83.082
+                                            c0,2.473,0.953,4.663,2.856,6.565l133.043,133.046c1.902,1.903,4.093,2.854,6.567,2.854s4.661-0.951,6.562-2.854L282.082,89.647
+                                            c1.902-1.903,2.847-4.093,2.847-6.565C284.929,80.607,283.984,78.417,282.082,76.511z"/>
+                                    </g>
+                                </svg>
+                                <p>Производитель</p>
+                            </div>
+                            <div class="filter__body">
+                                <div class="filter__range">
+                                    <input type="text" placeholder="от 35 999">
+                                    <input type="text" placeholder="до 529 999">
+                                </div>
+                                <div class="filter__checkboxes">
+                                    <div class="filter__check">
+                                        <input type="checkbox" id="min">
+                                        <label for="min">Менее 40 000 ₽</label>
+                                    </div>
+                                    <div class="filter__check">
+                                        <input type="checkbox" id="average">
+                                        <label for="average">40 000 - 100 000 ₽</label>
+                                    </div>
+                                    <div class="filter__check">
+                                        <input type="checkbox" id="max">
+                                        <label for="max">100 000 ₽ и более</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="filters__item filter active">
+                            <div class="filter__head">
+                                <svg version="1.1" x="0px" y="0px" width="284.929px" height="284.929px" viewBox="0 0 284.929 284.929">
+                                    <g>
+                                        <path d="M282.082,76.511l-14.274-14.273c-1.902-1.906-4.093-2.856-6.57-2.856c-2.471,0-4.661,0.95-6.563,2.856L142.466,174.441
+                                            L30.262,62.241c-1.903-1.906-4.093-2.856-6.567-2.856c-2.475,0-4.665,0.95-6.567,2.856L2.856,76.515C0.95,78.417,0,80.607,0,83.082
+                                            c0,2.473,0.953,4.663,2.856,6.565l133.043,133.046c1.902,1.903,4.093,2.854,6.567,2.854s4.661-0.951,6.562-2.854L282.082,89.647
+                                            c1.902-1.903,2.847-4.093,2.847-6.565C284.929,80.607,283.984,78.417,282.082,76.511z"/>
+                                    </g>
+                                </svg>
+                                <p>Цена</p>
+                            </div>
+                            <div class="filter__body">
+                                <div class="filter__range">
+                                    <input type="text" placeholder="от 35 999">
+                                    <input type="text" placeholder="до 529 999">
+                                </div>
+                                <div class="filter__checkboxes">
+                                    <div class="filter__check">
+                                        <input type="checkbox" id="min">
+                                        <label for="min">Менее 40 000 ₽</label>
+                                    </div>
+                                    <div class="filter__check">
+                                        <input type="checkbox" id="average">
+                                        <label for="average">40 000 - 100 000 ₽</label>
+                                    </div>
+                                    <div class="filter__check">
+                                        <input type="checkbox" id="max">
+                                        <label for="max">100 000 ₽ и более</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="filters__item filter">
+                            <div class="filter__head">
+                                <svg version="1.1" x="0px" y="0px" width="284.929px" height="284.929px" viewBox="0 0 284.929 284.929">
+                                    <g>
+                                        <path d="M282.082,76.511l-14.274-14.273c-1.902-1.906-4.093-2.856-6.57-2.856c-2.471,0-4.661,0.95-6.563,2.856L142.466,174.441
+                                            L30.262,62.241c-1.903-1.906-4.093-2.856-6.567-2.856c-2.475,0-4.665,0.95-6.567,2.856L2.856,76.515C0.95,78.417,0,80.607,0,83.082
+                                            c0,2.473,0.953,4.663,2.856,6.565l133.043,133.046c1.902,1.903,4.093,2.854,6.567,2.854s4.661-0.951,6.562-2.854L282.082,89.647
+                                            c1.902-1.903,2.847-4.093,2.847-6.565C284.929,80.607,283.984,78.417,282.082,76.511z"/>
+                                    </g>
+                                </svg>
+                                <p>Цвет</p>
+                            </div>
+                            <div class="filter__body">
+                                <div class="filter__range">
+                                    <input type="text" placeholder="от 35 999">
+                                    <input type="text" placeholder="до 529 999">
+                                </div>
+                                <div class="filter__checkboxes">
+                                    <div class="filter__check">
+                                        <input type="checkbox" id="min">
+                                        <label for="min">Менее 40 000 ₽</label>
+                                    </div>
+                                    <div class="filter__check">
+                                        <input type="checkbox" id="average">
+                                        <label for="average">40 000 - 100 000 ₽</label>
+                                    </div>
+                                    <div class="filter__check">
+                                        <input type="checkbox" id="max">
+                                        <label for="max">100 000 ₽ и более</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="filters__buttons">
+                        <div class="filters__apply button">Применить</div>
+                        <div class="filters__reset button button_transparent">Сбросить</div>
+                    </div>
+                </div>
+                <div class="right-block">
+                    <div class="cards">
+                        <div class="cards__container">
+                            <div class="cards__item card">
+                                <img src="/img/trakor.png" alt="Preview" class="card__image">
+                                <div class="card__body">
+                                    <div class="card__description">
+                                        <h3 class="card__title">Трактор - John Deere 3035D</h3>
+                                        <ul class="card__list">
+                                            <li class="card__list-item">Привод для тяжелых условий эксплуатации с зубчатой ​​передачей 8F/8R</li>
+                                            <li class="card__list-item">Встроенная диагностика, включая Service Advisor</li>
+                                            <li class="card__list-item">3-точечная сцепка категории 1, совместимая с десятками навесного оборудования</li>
+                                        </ul>
+                                    </div>
+                                    <div class="card__buttons">
+                                        <a href="/full-goods.html" class="card__open button button_transparent">Подробнее</a>
+                                        <div class="card__add button">Добавить в корзину</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards__item card">
+                                <img src="/img/trakor.png" alt="Preview" class="card__image">
+                                <div class="card__body">
+                                    <div class="card__description">
+                                        <h3 class="card__title">Трактор - John Deere 3035D</h3>
+                                        <ul class="card__list">
+                                            <li class="card__list-item">Привод для тяжелых условий эксплуатации с зубчатой ​​передачей 8F/8R</li>
+                                            <li class="card__list-item">Встроенная диагностика, включая Service Advisor</li>
+                                            <li class="card__list-item">3-точечная сцепка категории 1, совместимая с десятками навесного оборудования</li>
+                                        </ul>
+                                    </div>
+                                    <div class="card__buttons">
+                                        <a href="/full-goods.html" class="card__open button button_transparent">Подробнее</a>
+                                        <div class="card__add button">Добавить в корзину</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards__item card">
+                                <img src="/img/trakor.png" alt="Preview" class="card__image">
+                                <div class="card__body">
+                                    <div class="card__description">
+                                        <h3 class="card__title">Трактор - John Deere 3035D</h3>
+                                        <ul class="card__list">
+                                            <li class="card__list-item">Привод для тяжелых условий эксплуатации с зубчатой ​​передачей 8F/8R</li>
+                                            <li class="card__list-item">Встроенная диагностика, включая Service Advisor</li>
+                                            <li class="card__list-item">3-точечная сцепка категории 1, совместимая с десятками навесного оборудования</li>
+                                        </ul>
+                                    </div>
+                                    <div class="card__buttons">
+                                        <a href="/full-goods.html" class="card__open button button_transparent">Подробнее</a>
+                                        <div class="card__add button">Добавить в корзину</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards__item card">
+                                <img src="/img/trakor.png" alt="Preview" class="card__image">
+                                <div class="card__body">
+                                    <div class="card__description">
+                                        <h3 class="card__title">Трактор - John Deere 3035D</h3>
+                                        <ul class="card__list">
+                                            <li class="card__list-item">Привод для тяжелых условий эксплуатации с зубчатой ​​передачей 8F/8R</li>
+                                            <li class="card__list-item">Встроенная диагностика, включая Service Advisor</li>
+                                            <li class="card__list-item">3-точечная сцепка категории 1, совместимая с десятками навесного оборудования</li>
+                                        </ul>
+                                    </div>
+                                    <div class="card__buttons">
+                                        <a href="/full-goods.html" class="card__open button button_transparent">Подробнее</a>
+                                        <div class="card__add button">Добавить в корзину</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards__item card">
+                                <img src="/img/trakor.png" alt="Preview" class="card__image">
+                                <div class="card__body">
+                                    <div class="card__description">
+                                        <h3 class="card__title">Трактор - John Deere 3035D</h3>
+                                        <ul class="card__list">
+                                            <li class="card__list-item">Привод для тяжелых условий эксплуатации с зубчатой ​​передачей 8F/8R</li>
+                                            <li class="card__list-item">Встроенная диагностика, включая Service Advisor</li>
+                                            <li class="card__list-item">3-точечная сцепка категории 1, совместимая с десятками навесного оборудования</li>
+                                        </ul>
+                                    </div>
+                                    <div class="card__buttons">
+                                        <a href="/full-goods.html" class="card__open button button_transparent">Подробнее</a>
+                                        <div class="card__add button">Добавить в корзину</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards__item card">
+                                <img src="/img/trakor.png" alt="Preview" class="card__image">
+                                <div class="card__body">
+                                    <div class="card__description">
+                                        <h3 class="card__title">Трактор - John Deere 3035D</h3>
+                                        <ul class="card__list">
+                                            <li class="card__list-item">Привод для тяжелых условий эксплуатации с зубчатой ​​передачей 8F/8R</li>
+                                            <li class="card__list-item">Встроенная диагностика, включая Service Advisor</li>
+                                            <li class="card__list-item">3-точечная сцепка категории 1, совместимая с десятками навесного оборудования</li>
+                                        </ul>
+                                    </div>
+                                    <div class="card__buttons">
+                                        <a href="/full-goods.html" class="card__open button button_transparent">Подробнее</a>
+                                        <div class="card__add button">Добавить в корзину</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="more">
+                        <p>Показать ещё</p>
+                    </div> -->
+                    <div class="pagination">
+                        <span class="pagination__start pagination-button">
+                            <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.972 14.8501L11.7234 14.0987C11.8238 13.9985 11.8738 13.8832 11.8738 13.7528C11.8738 13.6227 11.8238 13.5074 11.7234 13.4073L5.81653 7.50008L11.7233 1.59313C11.8236 1.49295 11.8736 1.37766 11.8736 1.24742C11.8736 1.11712 11.8236 1.00183 11.7233 0.901698L10.9718 0.150353C10.8717 0.0500125 10.7564 0 10.6261 0C10.4959 0 10.3806 0.0501704 10.2805 0.150353L3.27632 7.15436C3.17614 7.25449 3.12607 7.36984 3.12607 7.50008C3.12607 7.63032 3.17614 7.74546 3.27632 7.84553L10.2805 14.8501C10.3807 14.9503 10.496 15 10.6261 15C10.7564 15 10.8717 14.9503 10.972 14.8501Z" fill="#5B5B5B"/>
+                                <path d="M15.972 14.8501L16.7234 14.0987C16.8238 13.9985 16.8738 13.8832 16.8738 13.7528C16.8738 13.6227 16.8238 13.5074 16.7234 13.4073L10.8165 7.50008L16.7233 1.59313C16.8236 1.49295 16.8736 1.37766 16.8736 1.24742C16.8736 1.11712 16.8236 1.00183 16.7233 0.901698L15.9718 0.150353C15.8717 0.0500125 15.7564 0 15.6261 0C15.4959 0 15.3806 0.0501704 15.2805 0.150353L8.27632 7.15436C8.17614 7.25449 8.12607 7.36984 8.12607 7.50008C8.12607 7.63032 8.17614 7.74546 8.27632 7.84553L15.2805 14.8501C15.3807 14.9503 15.496 15 15.6261 15C15.7564 15 15.8717 14.9503 15.972 14.8501Z" fill="#5B5B5B"/>
+                            </svg>
+                        </span>
+                        <span class="pagination__prev pagination-button">
+                            <svg version="1.1" x="0px" y="0px" width="284.929px" height="284.929px" viewBox="0 0 284.929 284.929">
+                                <g>
+                                    <path d="M282.082,76.511l-14.274-14.273c-1.902-1.906-4.093-2.856-6.57-2.856c-2.471,0-4.661,0.95-6.563,2.856L142.466,174.441
+                                        L30.262,62.241c-1.903-1.906-4.093-2.856-6.567-2.856c-2.475,0-4.665,0.95-6.567,2.856L2.856,76.515C0.95,78.417,0,80.607,0,83.082
+                                        c0,2.473,0.953,4.663,2.856,6.565l133.043,133.046c1.902,1.903,4.093,2.854,6.567,2.854s4.661-0.951,6.562-2.854L282.082,89.647
+                                        c1.902-1.903,2.847-4.093,2.847-6.565C284.929,80.607,283.984,78.417,282.082,76.511z"/>
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="pagination__number pagination-button active">1</span>
+                        <span class="pagination__number pagination-button">2</span>
+                        <span class="pagination__next pagination-button">
+                            <svg version="1.1" x="0px" y="0px" width="284.929px" height="284.929px" viewBox="0 0 284.929 284.929">
+                                <g>
+                                    <path d="M282.082,76.511l-14.274-14.273c-1.902-1.906-4.093-2.856-6.57-2.856c-2.471,0-4.661,0.95-6.563,2.856L142.466,174.441
+                                        L30.262,62.241c-1.903-1.906-4.093-2.856-6.567-2.856c-2.475,0-4.665,0.95-6.567,2.856L2.856,76.515C0.95,78.417,0,80.607,0,83.082
+                                        c0,2.473,0.953,4.663,2.856,6.565l133.043,133.046c1.902,1.903,4.093,2.854,6.567,2.854s4.661-0.951,6.562-2.854L282.082,89.647
+                                        c1.902-1.903,2.847-4.093,2.847-6.565C284.929,80.607,283.984,78.417,282.082,76.511z"/>
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="pagination__end pagination-button">
+                            <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.972 14.8501L11.7234 14.0987C11.8238 13.9985 11.8738 13.8832 11.8738 13.7528C11.8738 13.6227 11.8238 13.5074 11.7234 13.4073L5.81653 7.50008L11.7233 1.59313C11.8236 1.49295 11.8736 1.37766 11.8736 1.24742C11.8736 1.11712 11.8236 1.00183 11.7233 0.901698L10.9718 0.150353C10.8717 0.0500125 10.7564 0 10.6261 0C10.4959 0 10.3806 0.0501704 10.2805 0.150353L3.27632 7.15436C3.17614 7.25449 3.12607 7.36984 3.12607 7.50008C3.12607 7.63032 3.17614 7.74546 3.27632 7.84553L10.2805 14.8501C10.3807 14.9503 10.496 15 10.6261 15C10.7564 15 10.8717 14.9503 10.972 14.8501Z" fill="#5B5B5B"/>
+                                <path d="M15.972 14.8501L16.7234 14.0987C16.8238 13.9985 16.8738 13.8832 16.8738 13.7528C16.8738 13.6227 16.8238 13.5074 16.7234 13.4073L10.8165 7.50008L16.7233 1.59313C16.8236 1.49295 16.8736 1.37766 16.8736 1.24742C16.8736 1.11712 16.8236 1.00183 16.7233 0.901698L15.9718 0.150353C15.8717 0.0500125 15.7564 0 15.6261 0C15.4959 0 15.3806 0.0501704 15.2805 0.150353L8.27632 7.15436C8.17614 7.25449 8.12607 7.36984 8.12607 7.50008C8.12607 7.63032 8.17614 7.74546 8.27632 7.84553L15.2805 14.8501C15.3807 14.9503 15.496 15 15.6261 15C15.7564 15 15.8717 14.9503 15.972 14.8501Z" fill="#5B5B5B"/>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="/js/popup.js"></script>
+    <script src="/js/clicks.js"></script>
+</body>
+
+</html>

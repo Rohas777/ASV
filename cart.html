@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cart.css">
+    <title>ASV</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <a href="/" class="header__logo">ASV</a>
+                <nav class="header__menu">
+                    <a href="/catalog.html" class="header__link">Каталог</a>
+                    <a href="/cart.html" class="header__link active">Корзина</a>
+                    <a href="/about.html" class="header__link">О нас</a>
+                    <div class="header__link header__link_login unregister"> <!--Если юзер не авторизован, добавлять класс unregister, иначе убирать-->
+                        <svg viewBox="0 0 1024 1024" version="1.1" fill="#ffffff">
+                            <path d="M512 1024a510.421333 510.421333 0 0 1-371.584-160A511.850667 511.850667 0 1 1 512 1024z m309.632-160a466.965333 466.965333 0 0 0-619.264 0 467.477333 467.477333 0 0 0 619.264 0zM746.666667 469.333333a234.666667 234.666667 0 1 0-234.666667 234.666667 234.666667 234.666667 0 0 0 234.666667-234.666667zM512 42.666667A468.864 468.864 0 0 0 171.370667 834.133333a510.528 510.528 0 0 1 219.52-115.690666 277.333333 277.333333 0 1 1 242.218666 0 510.528 510.528 0 0 1 219.52 115.690666A468.864 468.864 0 0 0 512 42.666667z"  />
+                        </svg>
+                        <div class="popup">
+                            <div class="popup__wrapper">
+                                <h2 class="popup__title title title_center">Аккаунт</h2>
+                                <!-- <a href="/login.html" class="popup_button button">Войти</a> -->
+                                <p class="popup__field"><b>Ваш логин:</b> user1234</p>
+                                <p class="popup__field"><b>Ваш e-mail:</b> example@mail.ru</p>
+                                <span class="popup__exit">Выйти</span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="cart">
+                <div class="container">
+                    <div class="cart__wrapper">
+                        <h1 class="cart__title title title_center">Корзина</h1>
+                        <div class="cart__store">
+                            <div class="cart__item cart-card">
+                                <img src="/img/trakor.png" alt="Preview" class="cart-card_image">
+                                <div class="cart-card__desc">
+                                    <h3 class="cart-card__title">Трактор - John Deere 3035D</h3>
+                                    <ul class="cart-card__list">
+                                        <li class="cart-card__list-item">Привод для тяжелых условий эксплуатации с зубчатой ​​передачей 8F/8R</li>
+                                        <li class="cart-card__list-item">Встроенная диагностика, включая Service Advisor</li>
+                                        <li class="cart-card__list-item">3-точечная сцепка категории 1, совместимая с десятками навесного оборудования.</li>
+                                    </ul>
+                                </div>
+                                <div class="cart-card__term">
+                                    <h3 class="cart-card__title">Количество дней аренды</h3>
+                                    <div class="cart-card__counter">
+                                        <div class="cart-card__button">
+                                            <svg width="20" height="4" viewBox="0 0 20 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect y="4" width="4" height="20" rx="2" transform="rotate(-90 0 4)" fill="#5B5B5B"/>
+                                            </svg>
+                                        </div>
+                                        <input type="text" value="1" class="cart-card__input">
+                                        <div class="cart-card__button">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="8" width="4" height="20" rx="2" fill="#5B5B5B"/>
+                                                <rect y="12" width="4" height="20" rx="2" transform="rotate(-90 0 12)" fill="#5B5B5B"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-card__remove">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="6.51562" y="9.34314" width="4" height="20" rx="2" transform="rotate(-45 6.51562 9.34314)" fill="#5B5B5B"/>
+                                        <rect x="9.34375" y="23.4852" width="4" height="20" rx="2" transform="rotate(-135 9.34375 23.4852)" fill="#5B5B5B"/>
+                                    </svg>
+                                    <p>Убрать из корзины</p>
+                                </div>
+                            </div>
+                            <div class="cart__item cart-card">
+                                <img src="/img/trakor.png" alt="Preview" class="cart-card_image">
+                                <div class="cart-card__desc">
+                                    <h3 class="cart-card__title">Трактор - John Deere 3035D</h3>
+                                    <ul class="cart-card__list">
+                                        <li class="cart-card__list-item">Привод для тяжелых условий эксплуатации с зубчатой ​​передачей 8F/8R</li>
+                                        <li class="cart-card__list-item">Встроенная диагностика, включая Service Advisor</li>
+                                        <li class="cart-card__list-item">3-точечная сцепка категории 1, совместимая с десятками навесного оборудования.</li>
+                                    </ul>
+                                </div>
+                                <div class="cart-card__term">
+                                    <h3 class="cart-card__title">Количество дней аренды</h3>
+                                    <div class="cart-card__counter">
+                                        <div class="cart-card__button">
+                                            <svg width="20" height="4" viewBox="0 0 20 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect y="4" width="4" height="20" rx="2" transform="rotate(-90 0 4)" fill="#5B5B5B"/>
+                                            </svg>
+                                        </div>
+                                        <input type="text" value="1" class="cart-card__input">
+                                        <div class="cart-card__button">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="8" width="4" height="20" rx="2" fill="#5B5B5B"/>
+                                                <rect y="12" width="4" height="20" rx="2" transform="rotate(-90 0 12)" fill="#5B5B5B"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-card__remove">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="6.51562" y="9.34314" width="4" height="20" rx="2" transform="rotate(-45 6.51562 9.34314)" fill="#5B5B5B"/>
+                                        <rect x="9.34375" y="23.4852" width="4" height="20" rx="2" transform="rotate(-135 9.34375 23.4852)" fill="#5B5B5B"/>
+                                    </svg>
+                                    <p>Убрать из корзины</p>
+                                </div>
+                            </div>
+                            <div class="cart__item cart-card">
+                                <img src="/img/trakor.png" alt="Preview" class="cart-card_image">
+                                <div class="cart-card__desc">
+                                    <h3 class="cart-card__title">Трактор - John Deere 3035D</h3>
+                                    <ul class="cart-card__list">
+                                        <li class="cart-card__list-item">Привод для тяжелых условий эксплуатации с зубчатой ​​передачей 8F/8R</li>
+                                        <li class="cart-card__list-item">Встроенная диагностика, включая Service Advisor</li>
+                                        <li class="cart-card__list-item">3-точечная сцепка категории 1, совместимая с десятками навесного оборудования.</li>
+                                    </ul>
+                                </div>
+                                <div class="cart-card__term">
+                                    <h3 class="cart-card__title">Количество дней аренды</h3>
+                                    <div class="cart-card__counter">
+                                        <div class="cart-card__button">
+                                            <svg width="20" height="4" viewBox="0 0 20 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect y="4" width="4" height="20" rx="2" transform="rotate(-90 0 4)" fill="#5B5B5B"/>
+                                            </svg>
+                                        </div>
+                                        <input type="text" value="1" class="cart-card__input">
+                                        <div class="cart-card__button">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="8" width="4" height="20" rx="2" fill="#5B5B5B"/>
+                                                <rect y="12" width="4" height="20" rx="2" transform="rotate(-90 0 12)" fill="#5B5B5B"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-card__remove">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="6.51562" y="9.34314" width="4" height="20" rx="2" transform="rotate(-45 6.51562 9.34314)" fill="#5B5B5B"/>
+                                        <rect x="9.34375" y="23.4852" width="4" height="20" rx="2" transform="rotate(-135 9.34375 23.4852)" fill="#5B5B5B"/>
+                                    </svg>
+                                    <p>Убрать из корзины</p>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="cart__form">
+                            <input type="text" placeholder="Ваше имя..." class="cart__input">
+                            <input type="text" placeholder="Ваш e-mail..." class="cart__input">
+                            <textarea name="additional" id="1" cols="30" rows="10" class="cart__textarea" placeholder="Дополнительное сообщение..."></textarea>
+                            <button class="cart__button button">Оформить заказ</button>
+                        </form>  
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="/js/popup.js"></script>
+    <script src="/js/clicks.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+@import "index";
+@import "header";
+@import "footer";
+
+main{
+    padding-bottom: $footerHeigth;
+    padding-top: $headerHeigth;
+    height: 100%;
+
+    .about {
+        padding-top: 60px;
+        padding-bottom: 80px;
+
+		&__wrapper {
+            background: #FFF;
+            box-shadow: 1px 3px 4px 0px rgba(91, 91, 91, 0.25);
+            padding: 30px 90px 60px 20px;
+		}
+
+		&__title {
+            margin-bottom: 30px;
+		}
+
+        &__section{
+            font-size: 20px;
+            line-height: normal;
+            & * {
+                margin-bottom: 25px;
+                
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+
+        }
+
+		&__paragraph {
+		}
+
+		&__list {
+            margin-left: 1.2em;
+		}
+
+		&__list-item {
+            margin-bottom: 5px;
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+		}
+
+		&__separator {
+            margin: 20px auto;
+		}
+    }
+}

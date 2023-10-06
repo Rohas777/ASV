@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login-register.css">
+    <title>ASV</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <a href="/" class="header__logo">ASV</a>
+                <nav class="header__menu">
+                    <a href="/catalog.html" class="header__link">Каталог</a>
+                    <a href="/cart.html" class="header__link">Корзина</a>
+                    <a href="/about.html" class="header__link ">О нас</a>
+                    <div class="header__link header__link_login active unregister"> <!--Если юзер не авторизован, добавлять класс unregister, иначе убирать-->
+                        <svg viewBox="0 0 1024 1024" version="1.1" fill="#ffffff">
+                            <path d="M512 1024a510.421333 510.421333 0 0 1-371.584-160A511.850667 511.850667 0 1 1 512 1024z m309.632-160a466.965333 466.965333 0 0 0-619.264 0 467.477333 467.477333 0 0 0 619.264 0zM746.666667 469.333333a234.666667 234.666667 0 1 0-234.666667 234.666667 234.666667 234.666667 0 0 0 234.666667-234.666667zM512 42.666667A468.864 468.864 0 0 0 171.370667 834.133333a510.528 510.528 0 0 1 219.52-115.690666 277.333333 277.333333 0 1 1 242.218666 0 510.528 510.528 0 0 1 219.52 115.690666A468.864 468.864 0 0 0 512 42.666667z"  />
+                        </svg>
+                        <div class="popup">
+                            <div class="popup__wrapper">
+                                <h2 class="popup__title title title_center">Аккаунт</h2>
+                                <!-- <a href="/login.html" class="popup_button button">Войти</a> -->
+                                <p class="popup__field"><b>Ваш логин:</b> user1234</p>
+                                <p class="popup__field"><b>Ваш e-mail:</b> example@mail.ru</p>
+                                <span class="popup__exit">Выйти</span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="register">
+                <div class="container">
+                    <div class="register__wrapper">
+                        <h1 class="register__title title title_center">Регистрация</h1>
+                        <form action="#" class="register__form">
+                            <p class="register__label">E-mail</p>
+                            <input type="email" class="register__input" placeholder="example@mail.ru">
+                            <p class="register__label">Пароль</p>
+                            <input type="password" class="register__input" placeholder="qwerty12345">
+                            <button class="register__button button">Создать аккаунт</button>
+                            <p class="register__hint">Уже есть аккаунт? <a href="/login.html">Войти...</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="/js/clicks.js"></script>
+    <script src="/js/popup.js"></script>
+</body>
+
+</html>

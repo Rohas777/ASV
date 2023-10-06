@@ -1,0 +1,96 @@
+@import "index";
+@import "header";
+@import "footer";
+
+main{
+    padding-bottom: $footerHeigth;
+    padding-top: $headerHeigth;
+    height: 100%;
+
+    .call {
+
+        padding-bottom: 60px;
+        padding-top: 60px;
+
+        &__container{
+            width: 1170px;
+            padding: 40px 0 80px;
+            margin: 0px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.17);
+        }
+
+		&__title {
+            margin-bottom: 45px;
+		}
+
+		&__input {
+            border: 2px solid #000;
+            width: 350px;
+            height: 40px;
+            border-radius: 5px;
+            margin-bottom: 25px;
+            padding: 10px;
+            &::placeholder{
+                color: $GRAY;
+            }
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+
+		&__button {
+            margin-top: 30px;
+            width: 350px;
+            height: 40px;
+		}
+    }
+
+    .about {
+        padding-top: 50px;
+        padding-bottom: 60px;
+        background-color: #fff;
+
+		&__container {
+            width: 1170px;
+            margin: 0px auto;
+            padding: 0 20px;
+		}
+
+		&__title {
+            margin-bottom: 35px;
+		}
+
+		&__content {
+            font-family: $fontFamily;
+            font-size: 16px;
+            line-height: normal;
+		}
+
+		&__paragraph {
+            margin-bottom: 20px;
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+		}
+    }
+
+    .cards {
+        padding-top: 40px;
+        padding-bottom: 55px;
+
+		&__container {
+            width: 1170px;
+            margin: 0px auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 40px;
+		}
+
+		&__item {
+		}
+    }
+}
